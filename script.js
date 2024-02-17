@@ -28,15 +28,15 @@ $(document).ready(function () {
       } else if (destination.index === 1) {
         console.log('哪個先跑4');
         console.log('destination.index:', destination.index);
-        $.fn.fullpage.setAllowScrolling(true);
-        $.fn.fullpage.setKeyboardScrolling(true);
+        // $.fn.fullpage.setAllowScrolling(true);
+        // $.fn.fullpage.setKeyboardScrolling(true);
       }
     }
   });
 
   console.log('outside');
-  $.fn.fullpage.setAllowScrolling(false);
-  $.fn.fullpage.setKeyboardScrolling(false);
+  // $.fn.fullpage.setAllowScrolling(false);
+  // $.fn.fullpage.setKeyboardScrolling(false);
 
 });
 
@@ -61,8 +61,8 @@ function hideOverlay() {
     document.getElementById('fullscreen-video1').play();
 
     // 启用滚动
-    $.fn.fullpage.setAllowScrolling(true);
-    $.fn.fullpage.setKeyboardScrolling(true);
+    // $.fn.fullpage.setAllowScrolling(true);
+    // $.fn.fullpage.setKeyboardScrolling(true);
   });
 }
 
