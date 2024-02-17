@@ -20,6 +20,9 @@ $(document).ready(function () {
     },
     afterLoad: function (origin, destination, direction) {
       if (destination.index === 0) {
+        // 禁止滚动
+        $.fn.fullpage.setAllowScrolling(false);
+        $.fn.fullpage.setKeyboardScrolling(false);
         console.log('destination.index:', destination.index);
       } else if (destination.index === 1) {
         console.log('destination.index:', destination.index);
@@ -27,9 +30,7 @@ $(document).ready(function () {
     }
   });
 
-  // 禁止滚动
-  $.fn.fullpage.setAllowScrolling(false);
-  $.fn.fullpage.setKeyboardScrolling(false);
+
 });
 
 

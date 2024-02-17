@@ -6,14 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>光明&思蒨-訂婚邀請卡</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> -->
+ 
+    <link rel="stylesheet" href="bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./styles/style.css" />
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script> -->
+
+    <script src="bootstrap.min.js"
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <script src="jquery.min.js"></script>
+
   <script src="fullpage.js"></script>
 </head>
 
@@ -38,7 +49,7 @@
         <div style="position: relative; width: 100%; height: 100%; padding-top: 0;
                 padding-bottom: 0;  left: 0;box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 0; margin-bottom: 0; overflow: hidden;
                  will-change: transform;">
-          <video id="fullscreen-video1"
+          <video preload="metadata" id="fullscreen-video1"
             style="background-color: #282b31; position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; object-fit: contain;"
             muted playsinline>
             <source src="1.mp4" type="video/mp4">
@@ -53,7 +64,7 @@
         <div style="position: relative; width: 100%; height: 100%; padding-top: 0;
           padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 0; margin-bottom: 0; overflow: hidden;
            will-change: transform;">
-          <video id="fullscreen-video2"
+          <video preload="metadata" id="fullscreen-video2"
             style="background-color: #282b31;  position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
             autoplay muted playsinline>
             <source src="2.mp4" type="video/mp4">
