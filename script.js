@@ -28,19 +28,19 @@ $(document).ready(function () {
   });
 
   // 禁止滚动
-  // $.fn.fullpage.setAllowScrolling(false);
-  // $.fn.fullpage.setKeyboardScrolling(false);
+  $.fn.fullpage.setAllowScrolling(false);
+  $.fn.fullpage.setKeyboardScrolling(false);
 });
 
 
-// document.body.addEventListener('click', function () {
-//   console.log('sdaf');
-//   var audio = document.getElementById('myAudio');
-//   // 尝试播放音频
-//   audio.play().catch(e => console.error(e));
-//   // 移除监听器，确保只尝试播放一次
-//   this.removeEventListener('click', arguments.callee);
-// });
+document.body.addEventListener('click', function () {
+  console.log('sdaf');
+  var audio = document.getElementById('myAudio');
+  // 尝试播放音频
+  audio.play().catch(e => console.error(e));
+  // 移除监听器，确保只尝试播放一次
+  this.removeEventListener('click', arguments.callee);
+});
 
 function hideOverlay() {
   var overlay = document.getElementById('overlay');
@@ -53,8 +53,8 @@ function hideOverlay() {
     document.getElementById('fullscreen-video1').play();
 
     // 启用滚动
-    // $.fn.fullpage.setAllowScrolling(true);
-    // $.fn.fullpage.setKeyboardScrolling(true);
+    $.fn.fullpage.setAllowScrolling(true);
+    $.fn.fullpage.setKeyboardScrolling(true);
   });
 }
 
