@@ -10,10 +10,12 @@ $(document).ready(function () {
     navigationTooltips: ['0', '1', '2'],
     onLeave: function (origin, destination, direction) {
       if (destination.index == 0) {
+        console.log('哪個先跑1');
         document.getElementById('fullscreen-video1').currentTime = 0;
         document.getElementById('fullscreen-video1').play();
       }
       else if (destination.index === 1) {
+        console.log('哪個先跑2');
         document.getElementById('fullscreen-video2').currentTime = 0;
         document.getElementById('fullscreen-video2').play();
       }
@@ -23,9 +25,12 @@ $(document).ready(function () {
         // 禁止滚动
         // $.fn.fullpage.setAllowScrolling(false);
         // $.fn.fullpage.setKeyboardScrolling(false);
+        console.log('哪個先跑3');
         console.log('destination.index:', destination.index);
       } else if (destination.index === 1) {
+        console.log('哪個先跑4');
         console.log('destination.index:', destination.index);
+
       }
     }
   });
