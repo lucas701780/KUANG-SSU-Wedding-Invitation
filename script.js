@@ -34,7 +34,7 @@ $(document).ready(function () {
     }
   });
 
-  console.log('outside');
+  // console.log('outside');
   // $.fn.fullpage.setAllowScrolling(false);
   // $.fn.fullpage.setKeyboardScrolling(false);
 
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 
 document.body.addEventListener('click', function () {
-  console.log('sdaf');
+  // console.log('sdaf');
   var audio = document.getElementById('myAudio');
   // 尝试播放音频
   audio.play().catch(e => console.error(e));

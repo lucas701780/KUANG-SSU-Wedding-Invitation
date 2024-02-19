@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>光明&思蒨-訂婚邀請卡</title>
   <link rel="shortcut icon" href="#">
-  <link rel="stylesheet" href="bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
   <link rel="stylesheet" type="text/css" href="./styles/style.css" />
-  <script src="bootstrap.min.js"></script>
+  <!-- <script src="bootstrap.min.js"></script> -->
   <script src="jquery.min.js"></script>
   <script src="fullpage.js"></script>
 </head>
@@ -16,9 +17,15 @@
   <div id="fullpage">
     <div class="section">
       <div class="container-568 bg-white ">
-        
-        <div id="overlay" class="overlay" onclick="hideOverlay()"
+
+        <!-- <div id="overlay" class="overlay" onclick="hideOverlay()"
           style="position: absolute; width: 100%; height: 100%; left: 0; background: rgba(0,0,0,0.5) url('open3.gif') no-repeat center center / contain; z-index: 10; display: flex; align-items: center; justify-content: center;">
+        </div> -->
+        <div id="overlay" class="overlay" onclick="hideOverlay()"
+          style="position: absolute; width: 100%; height: 100%; left: 0; background: rgba(0,0,0,0.5); z-index: 10; display: flex; align-items: center; justify-content: center;">
+          <video autoplay loop muted playsinline style="max-width: 100%; max-height: 100%;">
+            <source src="3.mp4" type="video/mp4">
+          </video>
         </div>
 
         <div style="position: relative; width: 100%; height: 100%; padding-top: 0;
@@ -34,7 +41,7 @@
       </div>
     </div>
 
-    <div class="section" >
+    <div class="section">
       <div class="container-568 bg-white ">
         <div style="position: relative; width: 100%; height: 100%; padding-top: 0;
           padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 0; margin-bottom: 0; overflow: hidden;
@@ -53,4 +60,5 @@
   <audio id="myAudio" controls autoplay src="888.mp3"></audio>
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
