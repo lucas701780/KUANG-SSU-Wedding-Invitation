@@ -11,6 +11,7 @@ $(document).ready(function () {
     onLeave: function (origin, destination, direction) {
       if (destination.index == 0) {
         // console.log('哪個先跑1');
+        document.getElementById('fullscreen-video3').play();
         document.getElementById('fullscreen-video1').currentTime = 0;
         document.getElementById('fullscreen-video1').play();
       }
